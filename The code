@@ -115,7 +115,8 @@ scale_x_discrete(labels=c("1"="New England",
                           "5"="Mountain Plains", 
                           "6"="Western"))+
 coord_cartesian(ylim=c(1e9, 3e10))+ 
-scale_y_continuous(labels = function(x) paste0("$", x/1e9, "B"))
+scale_y_continuous(labels = function(x) paste0("$", x/1e9, "B"))+
+labs (title="Variation in revenue for large museums by region", y="Annual revenue", x="Region")
 revenue_boxplot
 ```
 
